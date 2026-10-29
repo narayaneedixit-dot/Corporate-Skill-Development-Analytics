@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-base: #080D16;
+    --surface-primary: #101824;
+    --surface-secondary: #151F2D;
+    --border-subtle: #263447;
+    --accent-lime: #C7F464;
+    --accent-cyan: #43D9F5;
+    --accent-warning: #F2B84B;
+    --text-primary: #EAF0F6;
+    --text-secondary: #8494A7;
+  }
+
+  body {
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Technical grid background pattern */
+.bg-tech-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(38, 52, 71, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(38, 52, 71, 0.35) 1px, transparent 1px);
+}
+
+.bg-tech-dots {
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(38, 52, 71, 0.6) 1px, transparent 1px);
+}
+
+/* Custom technical scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080D16;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263447;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #394d68;
+}

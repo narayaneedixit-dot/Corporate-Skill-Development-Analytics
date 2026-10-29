@@ -1,0 +1,6 @@
+{
+  "name": "SKILL//INTELLIGENCE",
+  "description": "Corporate Workforce & Software Skills Analytics",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
